@@ -4,34 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Головна</title>
   </head>
   <body>
     <header>
       <!-- main naigation site elements -->
-      <a href="#">WebStudio</a>
-      <nav>
+      <a href="./index.html" class="text-logo"><span class="text-color">Web</span>Studio</a>
+      <nav class="nav">
         <ul>
-          <li><a href="#">Студія</a></li>
-          <li><a href="#">Портфоліо</a></li>
+          <li class="current"><a href="./index.html">Студія</a></li>
+          <li><a href="./portfolio.html">Портфоліо</a></li>
           <li><a href="#">Контакти</a></li>
         </ul>
       </nav>
       <!-- contact elements -->
-      <ul>
+      <ul class="contacts">
         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
       <!-- site presentation section -->
-      <section>
+      <section class="hero">
         <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+        <button type="button" class="btn">Замовити послугу</button>
       </section>
       <!-- list of advanatages -->
-      <section>
-        <h2 hidden>Список переваг</h2>
+      <section class="advantages">
+        <h2>Список переваг</h2>
         <ul>
           <li>
             <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -52,7 +59,7 @@
         </ul>
       </section>
       <!-- list of work examples -->
-      <section>
+      <section class="examples">
         <h2>Чим ми займаємося</h2>
         <!-- pictures work examples -->
         <ul>
@@ -80,26 +87,26 @@
         </ul>
       </section>
       <!-- list of team members -->
-      <section>
+      <section class="team">
         <h2>Наша команда</h2>
         <ul>
           <li>
-            <img src="./images/member1.jpg" alt="фото учасника команди" width="270" />
+            <img src="./images/member1.jpg" alt="фото учасника команди" width="270" height="260" />
             <h3>Ігор Дем'яненко</h3>
             <p>Product Designer</p>
           </li>
           <li>
-            <img src="./images/member2.jpg" alt="фото учасника команди" width="270" />
+            <img src="./images/member2.jpg" alt="фото учасника команди" width="270" height="260" />
             <h3>Ольга Рєпіна</h3>
             <p>Frontend Developer</p>
           </li>
           <li>
-            <img src="./images/member3.jpg" alt="фото учасника команди" width="270" />
+            <img src="./images/member3.jpg" alt="фото учасника команди" width="270" height="260" />
             <h3>Микола Тарасов</h3>
             <p>Marketing</p>
           </li>
           <li>
-            <img src="./images/member4.jpg" alt="фото учасника команди" width="270" />
+            <img src="./images/member4.jpg" alt="фото учасника команди" width="270" height="260" />
             <h3>Михайло Єрмаков</h3>
             <p>UI Designer</p>
           </li>
@@ -107,8 +114,10 @@
       </section>
     </main>
     <footer>
-      <a href="#">WebStudio</a>
-      <address>
+      <a href="./index.html" class="text-logo-footer"
+        ><span class="text-color-footer-">Web</span>Studio</a
+      >
+      <address class="footer-address">
         <ul>
           <li>
             <a href="https://goo.gl/maps/LAU7HV8mEmGvzy9C7" target="_blank"
