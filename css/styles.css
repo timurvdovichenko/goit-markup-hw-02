@@ -212,6 +212,7 @@ footer {
   border-radius: var(--button-border-radius);
 }
 /* portfolio section */
+.main,
 .portfolio h2 {
   display: none;
 }
