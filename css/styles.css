@@ -1,9 +1,6 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #212121;
-  background-color: #ffffff;
-  font-display: swap;
+:root {
   --main-color: #ffffff;
+  --main-text-color: #212121;
   --main-text-logo-color: #2196f3;
   --header-text-logo-color: #212121;
   --nav-text-logo-color: #212121;
@@ -21,21 +18,25 @@ body {
   --portfolio-buttons-background-color: #f5f4fa;
   --portfolio-text-color: #757575;
   --portfolio-h-text-color: #212121;
-  --font-size-regular: 400;
   --font-size-medium: 500;
   --font-size-bold: 700;
   --font-size-black: 900;
   --button-border-radius: 4px;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.buttons-header,
+.portfolio-header {
+  display: none;
+}
 /* no dots on li */
-.nav li,
-.contacts li,
-.advantages li,
-.examples li,
-.section-buttons li,
-.team li,
-.footer-address li,
-.portfolio li {
+.contacts,
+.list {
   list-style: none;
 }
 .btn {
@@ -56,13 +57,11 @@ body {
 /* navigation and contact styles */
 .nav a {
   color: var(--nav-text-logo-color);
-  font-size: 14px;
   font-weight: var(--font-size-medium);
   text-decoration: none;
 }
 .contacts a {
   color: var(--contacts-text-color);
-  font-size: 14px;
   font-weight: var(--font-size-medium);
   text-decoration: none;
 }
@@ -71,7 +70,6 @@ body {
 .nav a:focus,
 .nav a:hover {
   color: var(--text-focus-color);
-  font-size: 14px;
 }
 .current a {
   color: var(--text-focus-color);
@@ -81,15 +79,16 @@ body {
   color: var(--main-color);
   background-color: var(--hero-background-color);
 }
-.hero h1 {
+.hero-header {
   font-size: 44px;
+  font-weight: var(--font-size-black);
   text-align: center;
   letter-spacing: 0.06em;
-  line-height: 60px;
+  line-height: 6em;
   display: block;
   text-transform: uppercase;
 }
-.hero button {
+.hero .btn {
   font-family: inherit;
   font-size: 16px;
   font-weight: var(--font-size-bold);
@@ -99,27 +98,25 @@ body {
   letter-spacing: 0.06em;
   border-style: none;
   border-radius: var(--button-border-radius);
-  line-height: 30px;
+  line-height: 3em;
 }
 
 /* advantages section */
-.advantages h2 {
+.advantages-header {
   display: none;
 }
-.advantages h3 {
+.advantages-header-list {
   font-weight: var(--font-size-bold);
-  font-size: 14px;
   letter-spacing: 0.03em;
 }
-.advantages p {
+.advantages-paragraph {
   font-weight: var(--font-size-regular);
-  font-size: 14px;
   color: var(--advantages-text-color);
-  line-height: 24px;
+  line-height: 2.4em;
   letter-spacing: 0.03em;
 }
 /* examples section */
-.examples h2 {
+.examples-header {
   font-size: 36px;
   font-weight: var(--font-size-bold);
   text-align: center;
@@ -129,27 +126,25 @@ body {
 .team {
   background-color: var(--team-background-color);
 }
-.team li {
+.team-list {
   background-color: var(--main-color);
 }
-.team h2 {
+.team-header {
   font-size: 36px;
   font-weight: var(--font-size-bold);
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team h3 {
+.team-list-header {
   font-weight: 500;
   font-size: 16px;
   font-weight: var(--font-size-medium);
   letter-spacing: 0.03em;
 }
-.team p {
-  font-weight: 400;
+.team-list-paragraph {
   font-size: 16px;
   font-weight: var(--font-size-regular);
   color: var(--list-members-text-color);
-  line-height: 24px;
   letter-spacing: 0.03em;
 }
 /* footer section */
@@ -163,14 +158,13 @@ body {
 .text-color-footer- {
   color: var(--main-text-logo-color);
 }
-footer {
+.footer {
   background-color: var(--footer-background-color);
 }
 .footer-address a {
   font-style: normal;
-  font-size: 14px;
   font-weight: var(--font-size-regular);
-  line-height: 24px;
+  line-height: 2.4em;
   letter-spacing: 0.03em;
   color: var(--main-color);
   text-decoration: none;
@@ -182,10 +176,8 @@ footer {
 
 /* Portfolio page */
 /* Section Buttons */
-.section-buttons h2 {
-  display: none;
-}
-.section-buttons button {
+
+.section-buttons .btn {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -197,8 +189,8 @@ footer {
   border-style: none;
   border-radius: var(--button-border-radius);
 }
-.section-buttons button:hover,
-.section-buttons button:focus {
+.section-buttons .btn:hover,
+.section-buttons .btn:focus {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -206,24 +198,24 @@ footer {
   background-color: var(--text-focus-color);
   text-align: center;
   letter-spacing: 0.03em;
-  line-height: 26px;
+  line-height: 2.6em;
   display: block;
   border-style: none;
   border-radius: var(--button-border-radius);
 }
 /* portfolio section */
-.main,
-.portfolio h2 {
-  display: none;
-}
-.portfolio h3 {
+
+.portfolio-header-list {
   font-size: 18px;
   font-weight: 700;
   color: var(--portfolio-h-text-color);
+  letter-spacing: 0.06em;
+}
+.portfolio-paragraph-list {
+  color: var(--portfolio-text-color);
+  font-size: 16px;
+  letter-spacing: 0.06em;
 }
 .portfolio a {
-  color: var(--portfolio-text-color);
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 400;
 }
