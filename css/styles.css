@@ -50,6 +50,8 @@ body {
   font-size: 26px;
   font-weight: var(--font-size-bold);
   text-decoration: none;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 .text-color {
   color: var(--main-text-logo-color);
@@ -59,11 +61,15 @@ body {
   color: var(--nav-text-logo-color);
   font-weight: var(--font-size-medium);
   text-decoration: none;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .contacts a {
   color: var(--contacts-text-color);
   font-weight: var(--font-size-medium);
   text-decoration: none;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .contacts a:focus,
 .contacts a:hover,
@@ -84,7 +90,7 @@ body {
   font-weight: var(--font-size-black);
   text-align: center;
   letter-spacing: 0.06em;
-  line-height: 6em;
+  line-height: 60px;
   display: block;
   text-transform: uppercase;
 }
@@ -98,7 +104,7 @@ body {
   letter-spacing: 0.06em;
   border-style: none;
   border-radius: var(--button-border-radius);
-  line-height: 3em;
+  line-height: 30px;
 }
 
 /* advantages section */
@@ -108,11 +114,12 @@ body {
 .advantages-header-list {
   font-weight: var(--font-size-bold);
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
 .advantages-paragraph {
   font-weight: var(--font-size-regular);
   color: var(--advantages-text-color);
-  line-height: 2.4em;
+  line-height: 24px;
   letter-spacing: 0.03em;
 }
 /* examples section */
@@ -164,7 +171,7 @@ body {
 .footer-address a {
   font-style: normal;
   font-weight: var(--font-size-regular);
-  line-height: 2.4em;
+  line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--main-color);
   text-decoration: none;
@@ -198,7 +205,7 @@ body {
   background-color: var(--text-focus-color);
   text-align: center;
   letter-spacing: 0.03em;
-  line-height: 2.6em;
+  line-height: 26px;
   display: block;
   border-style: none;
   border-radius: var(--button-border-radius);
