@@ -227,7 +227,7 @@ body {
 .portfolio-paragraph-list {
   color: var(--portfolio-text-color);
   font-size: 16px;
-  letter-spacing: 0.06em;
+  /* letter-spacing: 0.03em; */
   line-height: 1.88em;
 }
 .portfolio a {
