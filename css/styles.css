@@ -60,14 +60,14 @@ body {
   color: var(--nav-text-logo-color);
   font-weight: var(--font-size-medium);
   text-decoration: none;
-  line-height: 1.2em;
+  line-height: 1.142em;
   letter-spacing: 0.02em;
 }
 .contacts a {
   color: var(--contacts-text-color);
   font-weight: var(--font-size-medium);
   text-decoration: none;
-  line-height: 1.2em;
+  line-height: 1.142em;
   letter-spacing: 0.02em;
 }
 .contacts a:focus,
@@ -89,7 +89,7 @@ body {
   font-weight: var(--font-size-black);
   text-align: center;
   letter-spacing: 0.06em;
-  line-height: 1.5em;
+  line-height: 1.363em;
   display: block;
   text-transform: uppercase;
 }
